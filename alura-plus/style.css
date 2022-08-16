@@ -24,3 +24,11 @@ body{
  .container{
     height: 100vh;
  }
+
+ .button-container{
+    background-color: var(--blue-button);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--main-white);
+    display: block;
+ }
