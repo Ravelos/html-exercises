@@ -4,3 +4,23 @@
     --blue-button: #167BF7;
     --background-color: #00030C;
 }
+
+body{
+    background-color: var(--background-color);
+    color: var(--main-white);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+ .main-class{
+    background-image: url("img/Background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
+
+ .container{
+    height: 100vh;
+ }
