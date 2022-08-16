@@ -3,11 +3,15 @@
     --secondary-gray: #C0C0C0;
     --blue-button: #167BF7;
     --background-color: #00030C;
+    --main-font: 'Inter';
 }
 
 body{
     background-color: var(--background-color);
     color: var(--main-white);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .title-container{
@@ -49,4 +53,9 @@ body{
     color: var(--main-white);
     display: block;
     text-decoration: none;
+ }
+
+ .ads-container{
+   font-size: 12px;
+   color: var(--secondary-gray);
  }
