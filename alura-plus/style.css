@@ -36,6 +36,16 @@ body{
     grid-template-columns: 50% 50%;
  }
 
+ .box-conatiner{
+
+   margin: 0 6em;
+
+ }
+
+ .img-container{
+   margin: 1em 0 2em 0;
+ }
+
  .button-container{
     background-color: var(--blue-button);
     border-radius: 5px;
@@ -43,6 +53,7 @@ body{
     color: var(--main-white);
     display: block;
     text-decoration: none;
+    margin-bottom: 1em;
  }
 
  .secondary-button-container{
