@@ -1,6 +1,6 @@
 :root{
     --main-white: #ffffff;
-    --second-gray: #C0C0C0;
+    --secondary-gray: #C0C0C0;
     --blue-button: #167BF7;
     --background-color: #00030C;
 }
@@ -8,6 +8,11 @@
 body{
     background-color: var(--background-color);
     color: var(--main-white);
+}
+
+.title-container{
+    font-size: 28px;
+    font-weight: 700;
 }
 
 *{
@@ -23,6 +28,8 @@ body{
 
  .container{
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
  }
 
  .button-container{
@@ -31,4 +38,15 @@ body{
     padding: 1em;
     color: var(--main-white);
     display: block;
+    text-decoration: none;
+ }
+
+ .secondary-button-container{
+    background-color: transparent;
+    border: 2px solid var(--main-white);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--main-white);
+    display: block;
+    text-decoration: none;
  }
