@@ -102,4 +102,23 @@ body{
    padding: 2em;
  }
 
- 
+ .devices-list{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 5em 0;
+ }
+
+ .devices{
+  text-align: center;  
+ }
+
+.list-item{
+  font-size: 32px;
+  color: var(--main-white);
+}
+
+.device-title{
+  font-size: 48px;
+  color: var(--main-white);
+}
