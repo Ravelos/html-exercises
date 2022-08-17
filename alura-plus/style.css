@@ -92,3 +92,12 @@ body{
  .description-text{
    color: var(--secondary-gray);
  }
+
+ .secondary-button{
+   display: inline-block;
+   margin-top: 1em;
+ }
+
+ .description-container{
+   padding: 2em;
+ }
