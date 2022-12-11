@@ -8,6 +8,8 @@ Calculator
 
 Chessboard
 
+Clock
+
 Drum kit
 
 Exercises
