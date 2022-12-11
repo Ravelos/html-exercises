@@ -2,4 +2,4 @@
 
 HTML, Javascript and CSS exercises
 
-image.png
+![alt text](http://url/to/image.png)
