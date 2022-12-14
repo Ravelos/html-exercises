@@ -10,6 +10,8 @@ Chessboard
 
 Clock
 
+Css variable and js
+
 Drum kit
 
 Exercises
