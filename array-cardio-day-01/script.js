@@ -40,5 +40,20 @@ const inventors = [
 
   //const fullnames = inventors.map(inventor => inventor.first +' '+inventor.last);
   const fullnames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
-
   console.log(fullnames);
+
+  //3. Array.prototype.sort()
+  // Sort the inventors by birthdays, oldest to youngest
+
+  // const ordered = inventors.sort(function(a,b){
+  //   if(a.year > b.year){
+  //     return 1
+  //     }else{
+  //       return -1
+  //     }      
+  //   }
+  // )
+
+  const ordered = inventors.sort((a,b) => a.year > b.year ? 1 : -1);
+
+  console.table(ordered);
