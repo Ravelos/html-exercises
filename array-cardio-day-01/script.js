@@ -32,5 +32,13 @@ const inventors = [
 
   // console.table(fifteen);
 
-  const fifteen = inventors.filter((inventor) => inventor.year >=1500 && inventor.year < 1600 )
+  const fifteen = inventors.filter((inventor) => inventor.year >=1500 && inventor.year < 1600 );
   console.table(fifteen);
+
+  // 2. Array.prototype.map()
+  // Gives us an array of the inventors' first and last names
+
+  //const fullnames = inventors.map(inventor => inventor.first +' '+inventor.last);
+  const fullnames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+
+  console.log(fullnames);
