@@ -57,3 +57,22 @@ const inventors = [
   const ordered = inventors.sort((a,b) => a.year > b.year ? 1 : -1);
 
   console.table(ordered);
+
+// 4. Array.prototype.reduce()
+// How many years did all the inventors live?
+
+const totalYears = inventors.reduce((total,inventor)=>{
+  return total +(inventor.passed - inventor.year);
+},0);
+
+console.log(totalYears);
+
+//5.Sort the inventors by the years lived
+
+const oldest = inventors.sort(function(a,b){
+  const lastGuy = a.passed - a.year;
+  const nextGuy = b.passed - b.year;
+  return lastGuy > nextGuy ? -1 : 1;
+});
+
+console.table(oldest);
