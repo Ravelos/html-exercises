@@ -90,7 +90,7 @@ console.table(oldest);
 
 //7.Sort the people alphabetically by last name
 
-const alpha = people.sort(function(lastOne, nextOne){
+const alpha = people.sort((lastOne, nextOne)=>{
   const[aLast, aFirst] = lastOne.split(', ');
   const[bLast,bFirst] = nextOne.split(', ');
   return aLast>bLast ? 1:-1;
