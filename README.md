@@ -18,6 +18,10 @@ Drum kit
 
 Exercises
 
+Flex panel image gallery
+
 Netflix spinner
+
+Type Ahead
 
 
