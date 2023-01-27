@@ -26,9 +26,13 @@
 
     // and we want to make a copy of it.
 
-    // You might think we can just do something like this:
+    const team = players;
 
+    // You might think we can just do something like this:
+    console.log(team,players);
     // however what happens when we update that array?
+    team[3] = 'Lux';
+    console.log(team,players);
 
     // now here is the problem!
 
