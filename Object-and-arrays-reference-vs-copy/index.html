@@ -8,17 +8,17 @@
 
   <script>
     // start with strings, numbers and booleans
-    let age = 100;
-    let age2 = age;
-    console.log(age, age2);
-    age = 200;
-    console.log(age, age2);
+    // let age = 100;
+    // let age2 = age;
+    // console.log(age, age2);
+    // age = 200;
+    // console.log(age, age2);
 
-    let name = 'Oswaldo';
-    let name2 = name;
-    console.log(name, name2);
-    name = 'Ravelo';
-    console.log(name, name2);
+    // let name = 'Oswaldo';
+    // let name2 = name;
+    // console.log(name, name2);
+    // name = 'Ravelo';
+    // console.log(name, name2);
 
 
     // Let's say we have an array
@@ -26,9 +26,13 @@
 
     // and we want to make a copy of it.
 
-    // You might think we can just do something like this:
+    const team = players;
 
+    // You might think we can just do something like this:
+    console.log(team,players);
     // however what happens when we update that array?
+    team[3] = 'Lux';
+    console.log(team,players);
 
     // now here is the problem!
 
