@@ -38,9 +38,15 @@ Netflix spinner
 
 Objects and array - reference vs copy
 
+Slide in on scroll
+
+Sorting band names without articles
+
+Text Shadow Mouse Move Effect
+
 Type Ahead
 
-Slide in on scroll
+
 
 
 
