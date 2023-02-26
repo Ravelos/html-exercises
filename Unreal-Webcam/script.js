@@ -9,13 +9,19 @@ function getVideo() {
     .getUserMedia({ video: true, audio: false })
     .then((localMediaStream) => {
       console.log(localMediaStream);
-      // video.src = window.URL.createObjectURL(localMediaStream); Deprecated
-      // video.play();
+
+      //  DEPRECIATION :
+      //       The following has been depreceated by major browsers as of Chrome and Firefox.
+      //       video.src = window.URL.createObjectURL(localMediaStream);
+      //       Please refer to these:
+      //       Deprecated  - https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL
+      //       Newer Syntax - https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/srcObject
+
       video.srcObject = localMediaStream;
       video.play();
     })
     .catch((err) => {
-      console.log(`Oh no!!!`, err);
+      console.error(`OH NO!!!`, err);
     });
 }
 
@@ -31,16 +37,18 @@ function paintToCanvas() {
     let pixels = ctx.getImageData(0, 0, width, height);
     // mess with them
     // pixels = redEffect(pixels);
-    // pixels = rgbSplit(pixels);
-    // ctx.globalAlpha = 0.1;
-    pixels = greenScreen(pixels);
+
+    pixels = rgbSplit(pixels);
+    // ctx.globalAlpha = 0.8;
+
+    // pixels = greenScreen(pixels);
     // put them back
     ctx.putImageData(pixels, 0, 0);
   }, 16);
 }
 
 function takePhoto() {
-  // plays the sound
+  // played the sound
   snap.currentTime = 0;
   snap.play();
 
@@ -55,28 +63,30 @@ function takePhoto() {
 
 function redEffect(pixels) {
   for (let i = 0; i < pixels.data.length; i += 4) {
-    pixels.data[i + 0] = pixels.data[i + 0] + 100; //red
-    pixels.data[i + 1] = pixels.data[i + 1] - 50; //green
-    pixels.data[i + 2] = pixels.data[i + 2] * 0.5; //blue
+    pixels.data[i + 0] = pixels.data[i + 0] + 200; // RED
+    pixels.data[i + 1] = pixels.data[i + 1] - 50; // GREEN
+    pixels.data[i + 2] = pixels.data[i + 2] * 0.5; // Blue
   }
   return pixels;
 }
 
 function rgbSplit(pixels) {
   for (let i = 0; i < pixels.data.length; i += 4) {
-    pixels.data[i - 150] = pixels.data[i + 0] + 100; //red
-    pixels.data[i + 500] = pixels.data[i + 1] - 50; //green
-    pixels.data[i - 550] = pixels.data[i + 2] * 0.5; //blue
+    pixels.data[i - 150] = pixels.data[i + 0]; // RED
+    pixels.data[i + 500] = pixels.data[i + 1]; // GREEN
+    pixels.data[i - 550] = pixels.data[i + 2]; // Blue
   }
   return pixels;
 }
 
 function greenScreen(pixels) {
   const levels = {};
-  document.querySelectorAll('.rgb input').forEach((input) => {
+
+  document.querySelectorAll(".rgb input").forEach((input) => {
     levels[input.name] = input.value;
   });
-  for (i = 0; i < pixels.data.lenght; i = i + 4) {
+
+  for (i = 0; i < pixels.data.length; i = i + 4) {
     red = pixels.data[i + 0];
     green = pixels.data[i + 1];
     blue = pixels.data[i + 2];
@@ -90,9 +100,11 @@ function greenScreen(pixels) {
       green <= levels.gmax &&
       blue <= levels.bmax
     ) {
+      // take it out!
       pixels.data[i + 3] = 0;
     }
   }
+
   return pixels;
 }
 
