@@ -1,11 +1,14 @@
 {
-  "name": "geolocation-speedometer-and-compass",
+  "name": "gum",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "browser-sync start --directory --server --files \"*.css, *.html, *.js\" --https"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.5 <2.23.2"
+  }
 }
