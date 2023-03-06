@@ -22,6 +22,8 @@ Exercises
 
 Flex panel image gallery
 
+Follow along link highlighter
+
 Fun with HTML Canvas
 
 Hold shift to check multiple checkboxes
