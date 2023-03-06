@@ -1,6 +1,4 @@
-# hmtl-exercicios
-
-HTML, Javascript and CSS exercises
+# HTML, Javascript and CSS exercises
 
 Alura Plus
 
@@ -34,6 +32,8 @@ LocalStorage and event delegation
 
 14 Must know dev tools tricks
 
+Native speech recognition
+
 Netflix spinner
 
 Objects and array - reference vs copy
@@ -42,9 +42,15 @@ Slide in on scroll
 
 Sorting band names without articles
 
+Tally string times with reduce
+
 Text Shadow Mouse Move Effect
 
 Type Ahead
+
+Unreal webcam
+
+
 
 
 
