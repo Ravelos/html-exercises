@@ -26,6 +26,8 @@ Follow along link highlighter
 
 Fun with HTML Canvas
 
+Geolocation based speedometer and compass
+
 Hold shift to check multiple checkboxes
 
 Key sequence detection
@@ -43,6 +45,8 @@ Objects and array - reference vs copy
 Slide in on scroll
 
 Sorting band names without articles
+
+Speech synthesis
 
 Tally string times with reduce
 
