@@ -11,6 +11,7 @@ function populateVoices() {
   voices = this.getVoices();
 
   voicesDropdown.innerHTML = voices
+    // .filter(voice => voice.lang.includes('en')) this line if you want to limit to one specific language
     .map(voice =>`<option value="${voice.name}">${voice.name} (${voice.lang})</option>`
     )
     .join('');
