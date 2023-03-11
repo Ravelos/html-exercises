@@ -78,6 +78,10 @@ html {
     font-weight: 600;
     font-size: 30px;
   }
+
+  .fixed-nav li.logo{
+    max-width: 500px;
+  }
   
   li.logo a {
     color: black;
