@@ -11,6 +11,12 @@
     padding: 100px;
   }
 
+  button{
+    color: red;
+    border-radius: 25%;
+    height: 10px;
+  }
+
   .one {
     background: thistle;
   }
