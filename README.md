@@ -48,6 +48,8 @@ Sorting band names without articles
 
 Speech synthesis
 
+Stripe follow along nav
+
 Tally string times with reduce
 
 Text Shadow Mouse Move Effect
