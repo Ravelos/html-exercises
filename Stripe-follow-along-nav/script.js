@@ -8,8 +8,13 @@ function handleEnter() {
   background.classList.add("open");
 
   const dropdown = this.querySelector(".dropdown");
-  const dropdownCoords = getBoundingClientRec();
-  console.log(dropdownCoords);
+  const dropdownCoords = dropdown.getBoundingClientRect();
+  const navCoords = nav.getBoundingClientRect();
+  
+  const coords = {
+    height: dropdownCoords.height,
+    width: dropdownCoords.width
+  };
 }
 
 function handleLeave() {
