@@ -10,6 +10,8 @@ Calculator
 
 Chessboard
 
+Click and drag to scroll
+
 Clock
 
 Css variable and js
