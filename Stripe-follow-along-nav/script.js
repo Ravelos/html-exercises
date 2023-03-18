@@ -14,8 +14,8 @@ function handleEnter() {
   const coords = {
     height: dropdownCoords.height,
     width: dropdownCoords.width,
-    top: dropdownCoords.top,
-    left: dropdownCoords.left
+    top: dropdownCoords.top - navCoords.top,
+    left: dropdownCoords.left - navCoords.left
   };
 
   background.style.setProperty('height', `${coords.height}px`);
