@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+</head>
+<body>
+    <h1>Heladeria</h1>
+    <form>
+        <fieldset>
+            <legend>Datos cliente</legend>
+
+            <label for="nombre_cliente">Nombre cliente</label>
+            <input type="text" id="nombre_cliente"/>
+            <br/><br/>
+
+
+            <label for="telefono_cliente">Teléfono cliente</label>
+            <input type="tel" id="telefono_cliente"/>
+            <br/> <br/>
+
+
+            <label for="email_cliente">Email cliente</label>
+            <input type="email" id="email_cliente"/>
+            <br/> <br/>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Elige tu Helado</legend>
+
+            <h2>Sabor</h2>
+
+            <input type="radio" name="sabor" id="vainilla" value="vainilla" checked/>Vainilla<br/>
+            <input type="radio" name="sabor" id="chocolate" value="chocolate"/>Chocolate<br/>
+            <input type="radio" name="sabor" id="mixto" value="mixto"/>Mixto<br/>
+
+            <h2>Recipiente</h2>
+
+            <input type="radio" name="recipiente" id="cono" value="cono"/>Cono<br/>
+            <input type="radio" name="recipiente" id="tarrina" value="tarrina" checked/>Tarrina<br/>
+
+            <h2>Extras</h2>
+            <input type="checkbox" name="extras[]" id="caramelo" value="caramelo"/>Caramelo<br/>
+            <input type="checkbox" name="extras[]" id="chocolate" value="chocolate"/>Chocolate<br/>
+            <input type="checkbox" name="extras[]" id="kitkat" value="kitkat"/>Kitkat<br/>
+
+        </fieldset>
+        <br/> <br/>
+        
+        <input type="submit" value="enviar">
+
+    </form>
+</body>
+</html>
