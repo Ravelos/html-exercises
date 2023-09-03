@@ -1,0 +1,22 @@
+body{
+    background-color: aqua;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 15px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
