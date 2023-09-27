@@ -1,4 +1,4 @@
-const container = document.querySelector(".container");
+const container = document.querySelector("body");
 const h = document.createElement("h1");
 h.innerHTML = "Pneus bonitos"
 const preco = document.createElement("p");
