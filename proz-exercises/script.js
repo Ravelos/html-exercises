@@ -7,9 +7,11 @@ const listaOrdenada = document.getElementById("lista-ordenada");
 const listaDesordenada = document.getElementById("lista-desordenada");
 const anchor = document.querySelector("a");
 
-
 titulo.innerHTML = "Titulo";
-listaDesordenada.innerHTML = "Lista desordenada";
-listaOrdenada.innerHTML = "Lista ordenada";
-anchor.innerHTML = "Proz-Education"
-
+listaDesordenada.innerHTML = `<li><a href="https://www.google.com">Google</a></li>
+<li><a href="https://github.com/Ravelos">Github</a></li>
+<li><a href="https://www.instagram.com/">Instagram</a></li>`;
+listaOrdenada.innerHTML = `<li>This is an ordered list:</li>
+<li>Item2</li>
+<li>Item3</li>`;
+anchor.innerHTML = "Proz-Education";
